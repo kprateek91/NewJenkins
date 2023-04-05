@@ -1,8 +1,8 @@
 from fileinput import filename
 import fire
 
-def hello(name="World"):
-  return "Hello %s!" % name
+def hello(name="World", age=20):
+  return "Hello %s! %s" % name % age
 
 def determine_file_extension(file_name: str):
   if '.csv' in file_name:
